@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework #5</title>
+    <title>Homework #7</title>
 
     <!-- modern normalize -->
     <link
@@ -31,6 +31,7 @@
           <a class="logo link" href="./index.html"
             >Web<span class="spanlogo">Studio</span></a
           >
+
           <ul class="list menu">
             <li class="list-header">
               <a class="link item active" href="./index.html">Studio</a>
@@ -58,6 +59,127 @@
             </li>
           </ul>
         </address>
+
+        <!--mobile menu -->
+        <div class="mobile-menu-icon">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="mobile-menu-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="22"
+            >
+              <use href="./images/icons.svg#hamburger-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu modal-close-button">
+          <svg
+            class="menu-toggle-close-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="8"
+          >
+            <use href="./images/icons.svg#modal-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu-container">
+          <div class="mobile-main-menu">
+            <ul class="mobile-list-menu">
+              <li class="mobile-list-item">
+                <a class="item-link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-list-item">
+                <a class="item-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobile-list-item">
+                <a class="item-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-contact-menu">
+            <ul class="mobile-list-contact">
+              <li class="mobile-contact-item">
+                <a class="item-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contact-item">
+                <a class="email-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <!-- Socmed Icons -->
+            <div class="socmed-icon-wrapper">
+              <ul class="list mobile-menu-socmed">
+                <!-- Instagram Icon -->
+                <li class="mobile-menu-socmed-icon">
+                  <a href="" class="mobile-menu-socmed-link">
+                    <svg
+                      class="mobile-menu-socmed-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#footer-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <!-- Twitter Icon -->
+                <li class="mobile-menu-socmed-icon">
+                  <a href="" class="mobile-menu-socmed-link">
+                    <svg
+                      class="mobile-menu-socmed-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#footer-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <!-- Facebook Icon -->
+                <li class="mobile-menu-socmed-icon">
+                  <a href="" class="mobile-menu-socmed-link">
+                    <svg
+                      class="mobile-menu-socmed-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#footer-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <!-- LinkedIn Icon -->
+                <li class="mobile-menu-socmed-icon">
+                  <a href="" class="mobile-menu-socmed-link">
+                    <svg
+                      class="mobile-menu-socmed-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#footer-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
       </div>
     </header>
     <!-- Header -->
@@ -629,17 +751,20 @@
                 placeholder="E-mail"
                 class="footer-sub-input"
             /></label>
-            <button type="submit" class="footer-sub-btn">
-              Subscribe
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                class="subscribe-icon"
-              >
-                <use href="./images/icons.svg#footer-subscribe"></use>
-              </svg>
-            </button>
+
+            <div class="sub-btn">
+              <button type="submit" class="footer-sub-btn">
+                Subscribe
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  class="subscribe-icon"
+                >
+                  <use href="./images/icons.svg#footer-subscribe"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -773,5 +898,14 @@
     <!--modal-->
 
     <script src="./js/modal.js"></script>
+
+    <!--mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
