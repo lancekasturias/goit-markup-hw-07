@@ -260,7 +260,7 @@ body {
 .section-one {
   background-color: var(--Navy-blue);
   font-family: var(--Roboto);
-  padding: 188px 0;
+  padding: 112px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -346,7 +346,7 @@ body {
 }
 .section-two-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
   flex-wrap: wrap;
 }
 
@@ -1325,5 +1325,21 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+  }
+
+  .section-one {
+    background-color: var(--Navy-blue);
+    font-family: var(--Roboto);
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-people-office.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px, 1440px;
   }
 }
